@@ -1,0 +1,18 @@
+prod:
+  d1:
+    drivenName: mysql
+    db: xingwl
+    user: root
+    password: xingwl
+dev:
+  d1:
+    drivenName: mysql
+    db: xingwl
+    user: root
+    password: xingwl
+test:
+  d1:
+    drivenName: mysql
+    db: xingwl
+    user: root
+    password: xingwl

@@ -1,0 +1,27 @@
+{{define "content"}}
+    <div class="container">
+    <div class="panel panel-success">
+        <!-- Default panel contents -->
+        <table class="table table-hover">
+            <tr class="table table-info">
+                <th> ID </th>
+                <th> Avatar </th>
+                <th> CreatedAt </th>
+                <th> Telephone </th>
+                <th> Gender </th>
+                <th> WhatIsUp </th>
+            </tr>
+            {{ range . }}
+                <tr class="info">
+                    <td>{{ .ID }}</td>
+                    <td>{{ .Avatar }}</td>
+                    <td>{{ .CreatedAt|createdAt }}</td>
+                    <td>{{ .Telephone }}</td>
+                    <td>{{ .Gender }}</td>
+                    <td>{{ .WhatIsUp }}</td>
+                </tr>
+            {{ end }}
+        </table>
+    </div>
+    </div>
+{{end}}
